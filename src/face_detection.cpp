@@ -23,10 +23,12 @@ void FaceDetection::initialize(ros::NodeHandle &nh)
     ROS_INFO("Fail to find the face_detection package.");
   else
     ROS_INFO("Package path: %s", package_path_.c_str());
+
   model_path_ = package_path_ + "/model/";
 
   cam_sub_ = it_->subscribeCamera("/hk_camera/image_raw", 1, &FaceDetection::onFrameCb, this);
   image_pub_ = it_->advertise("/face_detection/output_image", 1);
+
   ROS_INFO("Success.");
 }
 
