@@ -6,12 +6,12 @@
         <param name="num_worker_threads" value="8" />
     </node>
 
-    <!-- galaxy_camera -->
-    <node pkg="nodelet" type="nodelet" name="galaxy_camera"
-          args="load galaxy_camera/galaxy_camera_nodelet $(arg manager_name)"
-          output="screen">
-        <!--     <param name="camera_SN" value="KE0200060392" /> -->
-    </node>
+<!--    &lt;!&ndash; galaxy_camera &ndash;&gt;-->
+<!--    <node pkg="nodelet" type="nodelet" name="galaxy_camera"-->
+<!--          args="load galaxy_camera/galaxy_camera_nodelet $(arg manager_name)"-->
+<!--          output="screen">-->
+<!--        &lt;!&ndash;     <param name="camera_SN" value="KE0200060392" /> &ndash;&gt;-->
+<!--    </node>-->
 
     <!-- hk_camera -->
     <node pkg="nodelet" type="nodelet" name="hk_camera"
